@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI QA Generator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h2>Upload Your Resume</h2>
+    
+    <div id="drop-area">
+        <p id="drop-text">Drag & Drop your resume here or click to select</p>
+        <input type="file" id="fileInput" accept=".docx, .pdf" hidden>
+    </div>
+    <button id="uploadBtn">
+        <span id="uploadText">Upload</span>
+        <img id="loadingGif" src="{{ url_for('static', filename='loading.gif') }}" style="display: none; width: 20px; height: 20px;vertical-align: middle;">
+        </button>
+   
+    <p id="upload-status"></p>
+
+    <h2>Add Job Description</h2>
+    <!-- <form id="jdForm" method="POST"> -->
+        <textarea id="jdTextArea" name="jd_text_area" rows="10" cols="50" placeholder="Enter text here..."></textarea><br>
+        <input type="text" id="upload-success" name="upload_success" value="false" readonly></input>
+        <button id="clearJDBtn">Clear</button>
+        <button id="submitBtn">Generate question answers
+            <img id="loadingSubmitGif" src="{{ url_for('static', filename='loading.gif') }}" style="display: none; width: 20px; height: 20px;vertical-align: middle;">
+        </button>
+        <!-- <button type="submit">Generate question answers</button> -->
+        
+
+    <!-- </form> -->
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

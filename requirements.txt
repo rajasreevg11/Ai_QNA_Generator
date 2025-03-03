@@ -1,0 +1,11 @@
+flask
+python-docx
+spacy
+azure-storage-blob
+azure-functions
+pandas
+joblib
+azure-ai-formrecognizer
+python-dotenv
+scikit-learn
+openpyxl

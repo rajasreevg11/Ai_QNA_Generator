@@ -1,0 +1,33 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 50px;
+}
+
+#drop-area {
+    border: 2px dashed #ccc;
+    padding: 20px;
+    margin: 20px auto;
+    width: 50%;
+    cursor: pointer;
+    background-color: #f9f9f9;
+}
+
+#drop-area.highlight {
+    border-color: blue;
+}
+
+textarea {
+    width: 50%;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: blue;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
